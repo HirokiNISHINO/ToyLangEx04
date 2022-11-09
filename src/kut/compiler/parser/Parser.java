@@ -111,7 +111,6 @@ public class Parser
 	 */
 	public AstNode term() throws IOException, CompileErrorException
 	{
-
 		// primary | primary (* | / ) primary
 		AstNode lhs = primary();
 		
@@ -131,6 +130,7 @@ public class Parser
 			AstNode binop = new AstBinOp(lhs, rhs, t);
 			lhs = binop;
 		}
+		
 		return lhs;
 	}
 	
