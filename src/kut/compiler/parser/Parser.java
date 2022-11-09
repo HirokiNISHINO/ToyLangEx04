@@ -172,7 +172,7 @@ public class Parser
 	{
 		Token t = this.getCurrentToken();
 		if (t.getC() != TokenClass.IntLiteral) {
-			throw new SyntaxErrorException("expected an integer literal, but found: " + t.getC());
+			throw new SyntaxErrorException("expected an integer literal, but found: " + t.getL());
 		}
 		
 		AstNode node = new AstIntLiteral(t);
