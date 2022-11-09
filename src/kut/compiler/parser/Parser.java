@@ -111,7 +111,6 @@ public class Parser
 	 */
 	public AstNode multiplicativeExpr() throws IOException, CompileErrorException
 	{
-		// primary | primary (* | / ) primary
 		AstNode lhs = primary();
 		
 		while(true) {
