@@ -159,7 +159,7 @@ public class Parser
 			return e;
 		}
 		
-		// if not expr.
+		// if not integer.
 		return integer();
 	}
 	 
